@@ -152,8 +152,6 @@ dmypy.json
 # Cython debug symbols
 cython_debug/
 
-.deps
-.deps/
 deps/
 
 # PyCharm
