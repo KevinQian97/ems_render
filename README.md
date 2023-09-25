@@ -23,5 +23,12 @@ If the blender is not installed through apt-get, may need to change the blender 
 ## Generated Motions
 The generated motions can be downloaded from [here](https://drive.google.com/drive/folders/1DICLcoX7Qji-cm9SqbBsed4x_2X7j_hd?usp=sharing). Under each folder, xxx.npy is the generated motion matrix with size of num_frames*num_of_vertices and xxx.txt is the text descriptions.
 
+## Get BABEL SYNC DATASET from BABEL
+BABEL DATASET could be downloaded from [here](https://babel.is.tue.mpg.de/).
+To generate the BABEL SYNC DATASET form BABEL. simply run:
+```bash
+    python prepare_annt.py --babel_path $path_to_BABEL_FOLDER --split_path $path_to_store_generated_splits --amass_path_ann $path_to_store_generated_new_dataset --amass_path $path_to_amass_dataset
+```
+
 ## Other Options
 The generated motion format is SMPL vertice output, so you can also use any 3rd party visualization code to visualize it. (e.g. [AMASS](https://github.com/nghorbani/amass/blob/master/notebooks/01-AMASS_Visualization.ipynb))
